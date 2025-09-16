@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo de Adivinhação</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Adivinhe o número da sorte!</h1>
+        <p>Neste game você terá 10 tentativas para acertar o número gerado pelo sistema.</p>
+    </header>
+    <section id="descricao">
+        <h2>Como funciona?</h2>
+        <p>Abaixo, você irá inserir um número de 1 a 100. Você terá 10 tentativas.</p>
+        <p>O sistema lhe dará dicas se o número sorteado é maior ou menor que o informado.</p>
+        <p>Reinicialize quantas vezes quiser.</p>
+    </section>
+    <section id="game">
+    <p>Insira abaixo!</p>
+
+    <input type="number" id="palpite" placeholder="Digite seu palpite" min="1" max="100" />
+    <button id="Chutar">Chutar</button>
+    <button id="Reiniciar">Reiniciar</button>
+
+    <p id="mensagem"></p>
+    <p>Tentativas restantes: <span id="tentativas">10</span></p>
+    <p id="historico"><strong>Histórico:</strong> nenhum palpite ainda</p>
+    </section>
+    <footer>
+        &copy;Todos os direitos reservados.
+    </footer>
+</body>
+</html>
